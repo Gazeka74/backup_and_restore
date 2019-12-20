@@ -1,3 +1,4 @@
+#!/bin/bash
 # Author : Gazeka74 <gazeka74@gmail.com>
 
 ############
@@ -24,7 +25,7 @@ CONFIG_FILE=false
 BACKUP=false
 RESTORE=false
 GIT=false
-MESSAGE=blank
+MESSAGE="AUTO COMMIT : $(date)"
 
 
 ############
@@ -35,6 +36,11 @@ function print_usage {
 	printf "$DESCRIPTOR \n$USAGE";
 }
 
+function add_commit_push {
+	git add .
+	git commit -m "$MESSAGE"
+	git push origin master
+}
 ############
 # Main loop
 ############
@@ -83,4 +89,5 @@ then
 	exit 1;
 fi
 
-
+add_commit_push
+echo -- all done !
