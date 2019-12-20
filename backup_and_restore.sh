@@ -96,6 +96,6 @@ fi
 
 
 #FIXME dirty
-package_list
+packages_list
 add_commit_push
 echo -- all done !

@@ -1,0 +1,14 @@
+base-system-0.112_6
+docker-19.03.5_1
+docker-compose-1.24.1_2
+git-2.24.1_1
+grub-2.04_2
+htop-2.2.0_1
+i3-gaps-4.17.1_2
+i3blocks-1.5_2
+i3status-2.13_1
+ufetch-0.1_2
+vim-8.2.0000_1
+xorg-7.6_5
+xterm-351_1
+zsh-5.7.1_1
