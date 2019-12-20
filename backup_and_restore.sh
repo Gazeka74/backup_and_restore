@@ -41,6 +41,11 @@ function add_commit_push {
 	git commit -m "$MESSAGE"
 	git push origin master
 }
+
+function packages_list {
+	xbps-query -m > packages-list.txt
+}
+
 ############
 # Main loop
 ############
@@ -89,5 +94,8 @@ then
 	exit 1;
 fi
 
+
+#FIXME dirty
+package_list
 add_commit_push
 echo -- all done !
