@@ -15,11 +15,11 @@ Options :
 	-h , --help	This help menu
 	-b , --backup	Backup the dotfiles 
 	-r , --restore	Restore the dotfiles to the correct location
-	-c=, --config=	Specify a configuration file to indicate what to save
 	-g , --git	In case of a backup, indicate to add . -commit -push
 	-m=, --message=	Used with -g, specify a particular message for the git commit
 			Used alone, this option has no effect"
-
+			
+#-c=, --config=	Specify a configuration file to indicate what to save
 DEFAULTS=true
 CONFIG_FILE=false
 BACKUP=false
@@ -70,7 +70,7 @@ do
 		echo --restore;
 		RESTORE=true;;
 	-c=*|--config_file=*)
-		echo --config_file; 
+		echo "not currently implemented"; 
 		DEFAULTS=false; 
 		CONFIG_FILES="${i#*=}";
 		echo $CONFIG_FILES;;
